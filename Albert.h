@@ -15,15 +15,6 @@ void maxLoops(const unsigned long loops);
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-template<class T> 
-inline Print &operator ,(Print &stream, const T arg) 
-{ stream.print(" ");
-  stream.print(arg); 
-  return stream; 
-}
-
-//---------------------------------------------------------------------------------------------------------------------------------------------------------
-
 class SimpleSoftPWM // only for LEDs and heating
 { public:
     bool pwm(byte value); // 0 ... 255
